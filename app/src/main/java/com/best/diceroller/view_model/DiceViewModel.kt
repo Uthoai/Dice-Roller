@@ -1,8 +1,10 @@
-package com.best.diceroller
+package com.best.diceroller.view_model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.best.diceroller.dice.Dice
+import com.best.diceroller.R
 
 class DiceViewModel: ViewModel() {
 

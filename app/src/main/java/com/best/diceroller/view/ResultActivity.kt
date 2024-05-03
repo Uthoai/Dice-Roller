@@ -1,4 +1,4 @@
-package com.best.diceroller
+package com.best.diceroller.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

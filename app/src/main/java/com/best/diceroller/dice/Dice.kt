@@ -1,4 +1,4 @@
-package com.best.diceroller
+package com.best.diceroller.dice
 
 class Dice(private val numSides: Int) {
     fun roll(): Int{

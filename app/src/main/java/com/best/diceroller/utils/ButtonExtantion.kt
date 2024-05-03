@@ -1,4 +1,4 @@
-package com.best.diceroller
+package com.best.diceroller.utils
 
 import android.widget.Button
 

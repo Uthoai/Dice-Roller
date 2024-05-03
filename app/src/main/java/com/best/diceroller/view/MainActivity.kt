@@ -1,17 +1,18 @@
-package com.best.diceroller
+package com.best.diceroller.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.best.diceroller.view_model.DiceViewModel
 import com.best.diceroller.databinding.ActivityMainBinding
-import kotlin.random.Random
+import com.best.diceroller.utils.disable
+import com.best.diceroller.utils.enable
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -93,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun result(){
-        val intent = Intent(this@MainActivity,ResultActivity::class.java)
+        val intent = Intent(this@MainActivity, ResultActivity::class.java)
         if (score1 > score2){
             intent.putExtra("result","Player 1 is Winner")
         } else if (score1 < score2){
